@@ -36,6 +36,7 @@ body{
      .row-reverse img{
          width: 10%;
          height: 80%;
+        
      }
      .colum{
          flex: 1;
