@@ -39,8 +39,12 @@ body{
         
      }
      .services img{
-         width: 400px;
+         width: 600px;
          height: 500px;
+     }
+     .services h2{
+         padding: 0px 50px;
+         font-size: 30px;
      }
      .colum{
          flex: 1;
@@ -75,4 +79,15 @@ body{
         border-radius: 5px;
         font-size: 20px;
         cursor: pointer;
+    }
+
+
+
+
+
+    @media only screen and (max-width: 600px){
+        .services{
+            flex-direction: column;
+        }
+        
     }
