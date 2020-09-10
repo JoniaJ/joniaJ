@@ -1,16 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
-    width: 80%;
+    width: 80%; 
     margin: auto;
     }
     nav a:hover{
-        background-color: violet;
+        background-color: #060741;
         overflow: hidden;
     }
     header{
-        padding: 0px 20px; 
+       
+        padding: 20px 0px; 
+    }
+    nav{
+        display: flex;
+        padding: 20px 0px;
     }
     nav a{
-        background-color: blue;
+        background-color: #1a1a99;
         color:whitesmoke ;
         text-align: center;
         text-decoration:none ;
@@ -21,7 +31,7 @@ body{
          display: flex;
          justify-content: space-evenly;
          align-items: center;
-         padding: 10px 0px;
+         padding: 20px 0px;
      }
      .row-reverse{
         width: 100%;
@@ -30,21 +40,41 @@ body{
         justify-content: space-evenly;
         align-items: center;
         padding: 10px 0px;
-        border: 1px solid black;
-        background-color: burlywood;
+        border: 1px solid rgb(155, 147, 147);
+        background-color: rgb(147, 121, 207);
      }
      .row img{
          width: 100px;
          height: 100px;
         
      }
-     .services img{
-         width: 600px;
-         height: 500px;
+     .row-services{
+         display: flex;
+         align-items: center;
+         width: 100%;
+         padding: 20px 0px;
+
      }
-     .services h2{
+     .row-services img{
+         flex: 1;
+         width: 400px;
+         height: 400px;
+     }
+     .row-services div{
+          flex:2;
+          padding: 0px 100px;
+     }
+     .row-services p{
+         flex: 2;
+         font-size: 18px;
+     }
+     .services img{
+         width: 300px;
+         height: 300px;
+     }
+     .services h3{
          padding: 0px 50px;
-         font-size: 30px;
+         font-size: 20px;
      }
      .colum{
          flex: 1;
@@ -58,17 +88,18 @@ body{
     
      }
      footer{
-        background-color: blue;
-        color: black;
+        background-color: #5c5cdd;
+        color: white;
         text-align: center;
         padding: 10px 14px;
     }
     .cta{
         width: 100%;
-        background-color: rgb(54, 54, 247);
+        background-color: rgb(116, 116, 221);
         height: 100px;
     }
     .cta h2{
+        padding: 0px 20px;
         color: white;
     }
     .cta button{
@@ -76,18 +107,26 @@ body{
         color: black;
         border: none;
         padding: 10px;
+        margin: 0px 20px;
         border-radius: 5px;
         font-size: 20px;
         cursor: pointer;
     }
+button a{
+    text-decoration: none;
+}
+select{
+    margin: 10px 0px ;
+}
 
 
 
 
-
-    @media only screen and (max-width: 600px){
-        .services{
+    @media (max-width: 600px){
+        .services, .row, .row-services, nav{
             flex-direction: column;
         }
-        
+        header h2{
+            text-align: center;
+        }
     }

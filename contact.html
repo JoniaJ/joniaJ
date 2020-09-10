@@ -4,55 +4,20 @@
 <head>
 <title>Contact</title>
 <link rel="stylesheet" href="./css/style.css">
-
-<style>
-body{
-    margin: 20px;
-    text-align: center;
-}
-nav{
-    color: tomato;
-    text-decoration: none;
-    padding: 15px 20px;
-}
-nav a:hover{
-    background-color: violet;
-    overflow: hidden;
-}
-nav a{
-    background-color: blue;
-    color:whitesmoke ;
-    text-decoration:none ;
-    padding: 14px 16px;
-}
-footer{
-    background-color: blue;
-    color: black;
-    text-align: center;
-    padding: 10px 14px;
-}
-header{
-    color: black; font-family: initial;
-font-size: 20px; text-align: center; 
-}
-.row{
-    border:30px ;
-}
-</style>
-
 </head>
 <body>
     <header>
         <h2>UJENZI HUB</h2>
-</header>
       <nav>
     <a href="index.html">NYUMBANI</a>
+    <a href="about.html">KUHUSU</a>
     <a href="services.html">HUDUMA ZETU</a>
     <a href="contact.html">MAWASILIANO</a>
 </nav>
-<header><h2> JIUNGE NASI KWA KUJAZA FORM HII</h2></header>
-<div class="row" style="border: 1px solid black; width: 20%; margin: auto">
-    <form>
+</header>
+<h2> JIUNGE NASI KWA KUJAZA FORM HII</h2>
+<div class="row" style="width: 20%; ">
+    <form style="border: 1px solid black; padding: 20px;">
     <label for="fname">Jina la kwanza:</label><br>
     <input type="text" ><br>
     <label for="lname">Jina la mwisho</label><br>
@@ -62,6 +27,14 @@ font-size: 20px; text-align: center;
     <label for="email">Barua pepe</label><br>
     <input type="text"><br>
     <br>
+    <label for="subject">Dhumuni</label>
+    <select> 
+        <option>Natafuta Fundi</option>
+        <option>Natafuta Vifaa</option>
+        <option>Mengineyo</option><br>
+        <br>
+        <textarea placeholder="Maoni/Ujumbe"></textarea>
+    </select>
     <input type="submit"
     value="wasilisha">
 </form>
