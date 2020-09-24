@@ -43,21 +43,43 @@ body{
         border: 1px solid rgb(155, 147, 147);
         background-color: rgb(147, 121, 207);
      }
-     .row img{
-         width: 100px;
-         height: 100px;
+     .row-about{
+         display: flex;
+         align-items: center;
+     }
+     .row-about img{
+         flex: 1;
+
+         padding: 0px 20px;
         
+     }
+     .row-about div{
+         flex: 1;
      }
      .row-services{
          display: flex;
          align-items: center;
          width: 100%;
          padding: 20px 0px;
-
+     }
+     .row-service{
+         display: flex;
+         align-items: flex-start;
+     }
+     .row-service .column{
+         display: flex;
+         flex-direction: column;
+         padding:10px;
+         margin:10px;
+         background-color: cadetblue;
+         align-items: flex-start;
+         justify-content: center;
+         height: 400px;
+         width: 33%;
      }
      .row-services img{
          flex: 1;
-         width: 400px;
+         width: 100%;
          height: 400px;
      }
      .row-services div{
@@ -84,9 +106,28 @@ body{
      }
      .mySlides img{
          width: 100%;
-         height: 500px;
+         height: 400px;
     
      }
+     .myTestimony{
+         display: flex;
+         flex-direction: row;
+        padding: 20px 0px;
+    }
+    .myTestimony img{
+        flex: 0.5;
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        padding: 0px 20px;
+        object-fit: contain;
+    }
+    .testimony-content{
+        flex: 2;
+        background-color: cadetblue;
+        padding: 20px;
+       
+    }
      footer{
         background-color: #5c5cdd;
         color: white;
@@ -95,7 +136,7 @@ body{
     }
     .cta{
         width: 100%;
-        background-color: rgb(116, 116, 221);
+        background-color: rgb(11, 11, 59);
         height: 100px;
     }
     .cta h2{
@@ -111,6 +152,20 @@ body{
         border-radius: 5px;
         font-size: 20px;
         cursor: pointer;
+    }
+    .column button{
+        background-color: white;
+        color: black;
+        border: none;
+        padding: 10px;
+        margin: 0px 20px;
+        border-radius: 5px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .row-service .column img{
+        width: 100%;
+        height: 200px;
     }
 button a{
     text-decoration: none;
@@ -130,3 +185,15 @@ select{
             text-align: center;
         }
     }
+
+form{
+    
+}
+input{
+    height: 30px;
+    width: 100%;
+}
+textarea{
+    height: 100px;
+    width: 100%;
+}

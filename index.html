@@ -48,29 +48,49 @@
 
 <div class="row cta">
     <h2>Je, Unahitaji Mafundi Bora Kwajili Ya Kazi Yako?</h2>
-    <button> <a href="contact.html">Tafuta Fundi</a></button>
+    <button> <a href="services.html">Tafuta Fundi</a></button>
 </div>
-<div class="row">
-<div class="row-reverse">
+<div class="row-service">
+    <div class="column">
+        <img src="./IMAGE/image1.png">
+        <p>Je unahitaji kupata huduma ya ujenzi?</p>
+         <button> <a href="services.html">Pata huduma</a></button>
+    </div>
+     <div class="column">
+        <img src="./IMAGE/image2.png">
+        <p>Je unahitaji  nyumba yako iwe na muonekano mzuri?</p>
+         <button> <a href="services.html">Urembo wa nyumba</a></button>
+    </div>
+    <div class="column">
+        <img src="./IMAGE/image3.png">
+        <p>Ni kifaa gani wahitaji?</p>
+         <button> <a href="services.html">Pata kifaa imara</a></button>
+    </div>
+</div>
+<div class="showtestimony">
+<div class="myTestimony fade">
     <img src="./IMAGE/imageP.jpg">
-    <p><span>Esther Chavula</span></p><p>CEO of Mwanafunzi Transport Empire</p>
+    <div class="testimony-content">
+        <p><span>Esther Chavula</span></p><p>CEO of Mwanafunzi Transport Empire</p>
     <p>Nimependa huduma ya Ujenzi Hub kwa kunihudumia vifaa imara na kubadili muonekano wa nyumba yangu.</p>
+    </div>
+    
 </div>
-</div>
-
-<div class="row">
-<div class="row-reverse">
+<div class="myTestimony fade">
     <img src="./IMAGE/imageN.jpg">
-    <p><span>Nelly Benjamini</span></p><p>CEO of Bucha Online</p>
+    <div class="testimony-content">
+        <p><span>Nelly Benjamini</span></p><p>CEO of Bucha Online</p>
     <p>Nimependa huduma ya Ujenzi Hub imenikutanisha na mhandisi mahili nimependa kazi yake.</p>
+    </div>
+    
 </div>
-</div>
-
-<div class="row">
-<div class="row-reverse">
+<div class="myTestimony fade">
     <img src="./IMAGE/imageQ.jpg">
-   <p><span>Brighton Phinias</span></p><p>Procurement Officer At Kinondoni</p>
+    <div class="testimony-content">
+        <p><span>Brighton Phinias</span></p><p>Procurement Officer At Kinondoni</p>
    <p>Nimependa huduma ya Ujenzi Hub kwa kunihudumia vifaa imara na kubadili muonekano wa nyumba yangu.</p>
+    </div>
+   
 </div>
 </div>
 <footer>
@@ -80,10 +100,25 @@
 
 <script>
 var slideIndex = 0;
+var testimonyIndex = 0;
 showSlides();
+showTestimony();
+
+function showTestimony() {
+    var i;
+  var testimony = document.getElementsByClassName("myTestimony");
+  for (i = 0; i < testimony.length; i++) {
+    testimony[i].style.display = "none";
+  }
+  testimonyIndex++;
+  if (testimonyIndex > testimony.length) {testimonyIndex = 1}
+  testimony[testimonyIndex-1].style.display = "flex";
+  setTimeout(showTestimony, 5000); // Change image every 2 seconds
+}
+
 
 function showSlides() {
-  var i;
+    var i;
   var slides = document.getElementsByClassName("mySlides");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
